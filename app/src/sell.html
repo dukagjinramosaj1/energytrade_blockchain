@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy Trading</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="#">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  </head>
+<body>
+
+ <!-- page header -->
+ <div id="page-header" class="row">
+  <div class="col-sm-12">
+    <h1 class="text-center">Enter Sell Order</h1>
+  </div><!--./col-sm-12-->
+</div><!--./row-->
+
+
+
+<div class="container">
+  <!-- Create Task -->
+
+  <div class="container">
+    <!-- Create Task -->
+    <div class="card">
+
+<nav  class="navbar navbar-inverse">
+      <div class="container-fluid">
+       <!--  <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div> -->
+
+
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">HOME</a></li>
+          <li ><a href="/buy.html">BUY</a></li>
+          <li class="active" ><a href="/sell.html">SELL</a></li>
+          <li><a href="/register.html">REGISTER</a></li>    
+        </ul>
+      </div>
+    </nav>
+
+
+  <div class="form-group">
+    <label for="volume">Check how much energy you have sold this round ! </label>
+      <div>
+        <h3 style="display:inline;">Your sold amount is: </h3> <h3 style="display:inline;" id='soldEnergy'>  </h3>
+      </div>
+      </br>
+          <button onclick="App.energySold();" class="btn btn-warning"> Check</button>
+     </div>
+  
+  <div class="row">
+      <form id="new-ask" class="col-sm-12">
+        <div class="form-group">
+          <label for="price">PRICE</label>
+          <input id="price-ask" type="number" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <label for="volume">AMOUNT</label>
+          <input id="volume-ask" type="number" class="form-control"></input>
+        </div>
+           <button type="submit" onclick="App.submitAsk();" class="btn btn-warning">SUBMIT</button>
+      </form>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<p id="status"></p>
+
+
+<script src="app.js"></script>
+</body>
+</html>

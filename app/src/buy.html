@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy Trading</title>
+    <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  </head>
+<body>
+
+ <!-- page header -->
+ <div id="page-header" class="row">
+  <div class="col-sm-12">
+    <h1 class="text-center">Enter Bid Order </h1>
+  </div><!--./col-sm-12-->
+</div><!--./row-->
+
+
+
+<div class="container">
+  <!-- Create Task -->
+
+  <div class="container">
+    <!-- Create Task -->
+    <div class="card">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+       <!--  <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div> -->
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">HOME</a></li>
+          <li class="active" ><a href="/buy.html">BUY</a></li>
+          <li><a href="/sell.html">SELL</a></li>
+          <li><a href="/register.html">REGISTER</a></li>    
+        </ul>
+      </div>
+    </nav>
+
+  <div class="form-group">
+    <label for="volume">Check how much energy you have bought this round ! </label>
+      <div>
+        <h3 style="display:inline;">Your bought amount is: </h3> <h3 style="display:inline;" id='boughtEnergy'>  </h3>
+      </div>
+      </br>
+          <button onclick="App.energyBought();" class="btn btn-warning"> Check</button>
+     </div>
+
+
+
+  <div class="row">
+      <form id="new-bid" class="col-sm-12">
+        <div class="form-group">
+          <label for="price">PRICE</label>
+          <input id="price-bid" type="number" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <label for="volume">AMOUNT</label>
+          <input id="volume-bid" type="number" class="form-control"></input>
+        </div>
+        <button type="submit" onclick="App.submitBid();" id="btn1" class="btn btn-warning" value="Bid">SUBMIT</button>
+      </form>
+</div>
+
+
+
+<p id="status"></p>
+
+
+<script src="app.js"></script>
+</body>
+</html>
